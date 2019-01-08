@@ -39,6 +39,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_email;
         
     }
+      public javax.swing.JTextField getAddressField()
+      {
+          
+          return txt_address;
+          
+      }  
       public void setName(String name)
       {
           txt_name.setText(name);
@@ -50,6 +56,10 @@ public class DetailViewPanel extends javax.swing.JPanel {
         public void seteMail(String email)
       {
           txt_email.setText(email);
+      }
+        public void setAddress(String address)
+      {
+          txt_email.setText(address);
       }
         public JComponent getComponent() 
         {
@@ -72,7 +82,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_mobileno = new javax.swing.JTextField();
         txt_email = new javax.swing.JTextField();
         Address = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_address = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(0, 153, 153));
         setForeground(new java.awt.Color(0, 153, 153));
@@ -85,9 +95,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         jLabel3.setText("E mail");
 
-        txt_name.setEditable(false);
         txt_name.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        txt_name.setText("Eswari");
         txt_name.setName("txt_name"); // NOI18N
         txt_name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,7 +104,6 @@ public class DetailViewPanel extends javax.swing.JPanel {
         });
 
         txt_mobileno.setBackground(new java.awt.Color(240, 240, 240));
-        txt_mobileno.setText("7708099359");
         txt_mobileno.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txt_mobileno.setName("txt_mobileno"); // NOI18N
         txt_mobileno.addActionListener(new java.awt.event.ActionListener() {
@@ -117,9 +124,9 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         Address.setText("Address");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_address.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_addressActionPerformed(evt);
             }
         });
 
@@ -139,7 +146,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(txt_name, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txt_address, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txt_mobileno, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(66, Short.MAX_VALUE))
         );
@@ -161,7 +168,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Address)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(75, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -174,9 +181,9 @@ public class DetailViewPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_nameActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_addressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_addressActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_addressActionPerformed
 
     private void txt_mobilenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_mobilenoActionPerformed
         // TODO add your handling code here:
@@ -187,7 +194,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txt_address;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;

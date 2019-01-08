@@ -133,7 +133,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
              detailPanel.setName(rs.getString("name"));
              detailPanel.seteMail(rs.getString("email"));
              detailPanel.setMobile(rs.getString("mob"));
-             
+             detailPanel.setAddress(rs.getString("address"));
            }
             conn.close();
         }
